@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>밀리언 마케팅 랩 | No Lies, Just Wise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pagelozi:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 1. No Lies, Just Wise + True Focus -->
+  <section class="section hero">
+    <div class="true-focus">
+      <span class="focus-word">No</span>
+      <span class="focus-word">Lies,</span>
+      <span class="focus-word">Just</span>
+      <span class="focus-word">Wise</span>
+    </div>
+  </section>
+
+  <!-- 2. 브랜드명 (효과 없이 크게) -->
+  <section class="section brand">
+    <div class="brand-title">Million Marketing Lab</div>
+    <div class="brand-subtitle">밀리언 마케팅 랩</div>
+  </section>
+
+  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+  <!-- 3. 말풍선 (옅은 회색, 둥근 사각형, 좌상/우하 배치) -->
+  <section class="section big-balloons">
+    <div class="speech-bubble2 left">이런 고민을 하십니까?</div>
+  </section>
+  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+  
+  <!-- 고민 텍스트 애니메이션 섹션들 -->
+  <section class="section worry-text-section">
+    <div class="worry-text-container">
+      <canvas id="worry-text-1" class="worry-text-canvas"></canvas>
+    </div>
+  </section>
+  
+  <section class="section worry-text-section">
+    <div class="worry-text-container">
+      <canvas id="worry-text-2" class="worry-text-canvas"></canvas>
+    </div>
+  </section>
+  
+  <section class="section worry-text-section">
+    <div class="worry-text-container">
+      <canvas id="worry-text-3" class="worry-text-canvas"></canvas>
+    </div>
+  </section>
+  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+
+  <!-- 4. Decrypted Text (배경 없이, 크게, 루프 2초) -->
+  <section class="section decrypted">
+    <span class="decrypted-text loop2">잘 찾아오셨습니다.</span>
+  </section>
+  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+
+  <!-- split-section: 반응형 2분할(검정/컬러) 구조 -->
+  <div class="split-section">
+    <div class="panel black">
+      <div class="hero-content">
+        <h1>We Believe</h1>
+        <h2>In Honesty</h2>
+      </div>
+    </div>
+    <div class="panel green">
+      <div class="details-content">
+        <div class="text-content">
+          <h3>저희는 정직합니다</h3>
+          <ul>
+            <li>결코 장기 계약을 강요하지 않습니다.</li>
+            <li>아무나 받지 않습니다. 정말 성과가 날 수 있는 분들만 받겠습니다.</li>
+            <li>업무 성과 속이지 않고 솔직하게 말씀드리겠습니다.</li>
+          </ul>
+        </div>
+        <div class="icon-wrapper">
+          <img src="정직.png" alt="손을 맞잡고 있는 신뢰의 아이콘" class="icon-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="split-section">
+    <div class="panel black">
+      <div class="hero-content">
+        <h1>WE'RE GOOD AT</h1>
+        <h2>WHAT WE DO</h2>
+      </div>
+    </div>
+    <div class="panel blue">
+      <div class="details-content">
+        <div class="text-content">
+          <h3>저희는 실력이 있습니다</h3>
+          <ul>
+            <li>지난 10년 간 여러 사업을 시도했습니다.</li>
+            <li>솔직히 언제나 성공한 것은 아니였습니다.</li>
+            <li>그렇지만 현재는 수십억 매출 매장 운영하고 있습니다.</li>
+            <li>대면으로 찾아오셔도 좋습니다. 자신있습니다.</li>
+          </ul>
+        </div>
+        <div class="icon-wrapper">
+          <img src="엄지척 아이콘.png" alt="엄지척 모양의 실력 아이콘" class="icon-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="split-section">
+    <div class="panel black">
+      <div class="hero-content">
+        <h1>WE</h1>
+        <h2>CAN'T LOSE</h2>
+      </div>
+    </div>
+    <div class="panel red">
+      <div class="details-content">
+        <div class="text-content">
+          <h3>이길 수 밖에 없는 마케팅을</h3>
+          <p class="subtitle">알려드리겠습니다.</p>
+        </div>
+        <div class="icon-wrapper">
+          <img src="승리.png" alt="승리의 V자 아이콘" class="icon-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. 서비스: GSAP scrollTrigger 스타일, pin+scrub, 한 번에 하나씩 등장/사라짐 -->
+  <section class="section service-scroll-gsap" id="service-scroll">
+    <div class="service-gsap-list">
+      <div class="service-gsap-item naver">Naver</div>
+      <div class="service-gsap-item meta">Meta</div>
+      <div class="service-gsap-item google">
+        <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+      </div>
+      <div class="service-gsap-item daangn">Daangn</div>
+      <div class="service-gsap-item kakao">Kakao</div>
+    </div>
+  </section>
+
+  <section class="proof-section">
+    <div class="proof-title">저희는 숫자로 증명하겠습니다.</div>
+  </section>
+  
+  <section class="proof-section">
+    <div class="proof-image-container">
+      <img src="성공 사례1.png" alt="성공 사례1" class="proof-img-single">
+    </div>
+  </section>
+  
+  <section class="proof-section">
+    <div class="proof-image-container">
+      <img src="성공 사례3.png" alt="성공 사례3" class="proof-img-single">
+    </div>
+  </section>
+
+  <!-- 7. 문의하기 폼 -->
+  <section class="section contact">
+    <div class="contact-form-wrap">
+      <div class="contact-desc">아래 정보를 남겨주시면 빠르게 연락드리겠습니다.</div>
+      <form>
+        <input type="text" placeholder="회사/기업" required />
+        <input type="text" placeholder="성함" required />
+        <input type="tel" placeholder="전화번호" required />
+        <input type="email" placeholder="이메일" required />
+        <input type="text" placeholder="진행 중인 마케팅" />
+        <textarea placeholder="무엇을 도와드릴까요?" required></textarea>
+        <button type="submit">문의하기</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-wrap">
+      <img src="logo.png" alt="밀리언 마케팅 랩 로고" class="footer-logo" />
+      <div class="footer-info">
+        <div class="footer-row">
+          <span class="footer-label">기업명 :</span> 밀리언 마케팅 랩
+          <span class="footer-label">대표 :</span> 이승훈
+          <span class="footer-label">전화번호 :</span> 010-9592-9135
+        </div>
+        <div class="footer-row">
+          <span class="footer-label">사업자등록번호 :</span> 356-42-01329
+          <span class="footer-label">E-mail :</span> teammml@naver.com
+          <a href="privacy.html" target="_blank" class="footer-link">개인정보 처리방침</a>
+        </div>
+        <div class="footer-row">
+          서울시 강동구 상일로15길 10 4층
+        </div>
+        <div class="footer-row copyright">
+          Copyright ⓒ 밀리언마케팅랩 All Right Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
