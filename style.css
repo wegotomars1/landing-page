@@ -7,6 +7,18 @@ body {
   margin: 0;
   background: #111;
   color: #fff;
+  overflow-x: hidden;
+}
+
+.footer-divider {
+  display: inline-block;
+  margin: 0 4px;
+  color: #666;
+  font-weight: 400;
+  font-size: 1em;
+  vertical-align: middle;
+  height: 1em;
+  line-height: 1;
 }
 
 .section.hero, .section.decrypted { background-color: #000 !important; }
@@ -364,6 +376,11 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.footer-row > * {
+  white-space: nowrap;
 }
 .footer-label {
   color: #fff !important;
@@ -380,6 +397,32 @@ body {
   font-size: 0.95em;
   color: #fff !important;
   margin-top: 6px;
+}
+
+.footer-row-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  gap: 0;
+}
+.footer-row-left,
+.footer-row-right {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.footer-row-left {
+  text-align: right;
+  padding-right: 8px;
+}
+.footer-row-right {
+  text-align: left;
+  padding-left: 8px;
+}
+.footer-divider {
+  flex: 0 0 auto;
+  margin: 0 4px;
 }
 
 .contact-form-wrap {
