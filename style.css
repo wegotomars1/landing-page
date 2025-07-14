@@ -898,4 +898,12 @@ section[style*="background:#000;"][style*="min-height:100vh"] {
     justify-content: flex-start !important;
     align-items: flex-start !important;
   }
+  .footer-link {
+    margin-left: 0 !important;
+  }
+  .footer-logo {
+    display: block;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
 } 
