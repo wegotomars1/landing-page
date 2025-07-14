@@ -9,149 +9,148 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 1. No Lies, Just Wise + True Focus -->
-  <section class="section hero">
-    <div class="true-focus">
-      <span class="focus-word">No</span>
-      <span class="focus-word">Lies,</span>
-      <span class="focus-word">Just</span>
-      <span class="focus-word">Wise</span>
+    <!-- 1. No Lies, Just Wise + True Focus -->
+    <section class="section hero">
+      <div class="true-focus">
+        <span class="focus-word">No</span>
+        <span class="focus-word">Lies,</span>
+        <span class="focus-word">Just</span>
+        <span class="focus-word">Wise</span>
+      </div>
+    </section>
+
+    <!-- 2. 브랜드명 (효과 없이 크게) -->
+    <section class="section brand">
+      <div class="brand-title">Million Marketing Lab</div>
+      <div class="brand-subtitle">밀리언 마케팅 랩</div>
+    </section>
+
+    <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+    <!-- 고민 안내 텍스트 (흰색, decrypted-text.loop2 크기, 검정 배경) -->
+    <section class="section big-question" style="background:#000;">
+      <div class="big-question-text" style="color:#fff; font-size:5vw; font-weight:900; text-align:center; width:100vw; margin:0 auto; letter-spacing:-0.04em;">이런 고민을 하십니까?</div>
+    </section>
+
+    <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+
+    <!-- 고민 텍스트 애니메이션 섹션들 -->
+    <section class="section worry-text-section">
+      <div class="worry-text-container">
+        <canvas id="worry-text-1" class="worry-text-canvas"></canvas>
+      </div>
+    </section>
+    
+    <section class="section worry-text-section">
+      <div class="worry-text-container">
+        <canvas id="worry-text-2" class="worry-text-canvas"></canvas>
+      </div>
+    </section>
+    
+    <section class="section worry-text-section">
+      <div class="worry-text-container">
+        <canvas id="worry-text-3" class="worry-text-canvas"></canvas>
+      </div>
+    </section>
+    <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+
+    <!-- 4. Decrypted Text (배경 없이, 크게, 루프 2초) -->
+    <section class="section decrypted">
+      <span class="decrypted-text loop2">잘 찾아오셨습니다.</span>
+    </section>
+    <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
+
+    <!-- trust 이미지 (좌우 꽉차게) -->
+    <div class="section-hero-img-wrap">
+      <img src="trust.jpg" alt="trust" class="section-hero-img-full">
     </div>
-  </section>
-
-  <!-- 2. 브랜드명 (효과 없이 크게) -->
-  <section class="section brand">
-    <div class="brand-title">Million Marketing Lab</div>
-    <div class="brand-subtitle">밀리언 마케팅 랩</div>
-  </section>
-
-  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
-  <!-- 고민 안내 텍스트 (흰색, decrypted-text.loop2 크기, 검정 배경) -->
-  <section class="section big-question" style="background:#000;">
-    <div class="big-question-text" style="color:#fff; font-size:5vw; font-weight:900; text-align:center; width:100vw; margin:0 auto; letter-spacing:-0.04em;">이런 고민을 하십니까?</div>
-  </section>
-
-  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
-
-  <!-- 고민 텍스트 애니메이션 섹션들 -->
-  <section class="section worry-text-section">
-    <div class="worry-text-container">
-      <canvas id="worry-text-1" class="worry-text-canvas"></canvas>
-    </div>
-  </section>
-  
-  <section class="section worry-text-section">
-    <div class="worry-text-container">
-      <canvas id="worry-text-2" class="worry-text-canvas"></canvas>
-    </div>
-  </section>
-  
-  <section class="section worry-text-section">
-    <div class="worry-text-container">
-      <canvas id="worry-text-3" class="worry-text-canvas"></canvas>
-    </div>
-  </section>
-  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
-
-  <!-- 4. Decrypted Text (배경 없이, 크게, 루프 2초) -->
-  <section class="section decrypted">
-    <span class="decrypted-text loop2">잘 찾아오셨습니다.</span>
-  </section>
-  <section class="black-gap-section" style="background:#000; min-height:100vh;"></section>
-
-  <!-- trust 이미지 (좌우 꽉차게) -->
-  <div class="section-hero-img-wrap">
-    <img src="trust.jpg" alt="trust" class="section-hero-img-full">
-  </div>
-  <div class="split-section">
-    <div class="panel black">
-      <div class="linear-hero-block">
-        <div class="linear-hero-en" style="text-transform:uppercase; margin-bottom:0; font-size:5vw; font-weight:900; white-space:nowrap;">WE BELIEVE</div>
-        <div class="linear-hero-en-sub" style="margin-top:0; font-size:5vw; font-weight:900;">IN HONESTY</div>
-        <div style="height:2.2vw;"></div>
-        <div class="linear-hero-ko-main">저희는 정직합니다</div>
-        <div class="linear-hero-ko-sub">결코 장기 계약을 강요하지 않습니다.<br>아무나 받지 않습니다. 정말 성과가 날 수 있는 분들만 받겠습니다.<br>업무 성과 속이지 않고 솔직하게 말씀드리겠습니다.</div>
+    <div class="split-section">
+      <div class="panel black">
+        <div class="linear-hero-block">
+          <div class="linear-hero-en" style="text-transform:uppercase; margin-bottom:0; font-size:5vw; font-weight:900; white-space:nowrap;">WE BELIEVE</div>
+          <div class="linear-hero-en-sub" style="margin-top:0; font-size:5vw; font-weight:900;">IN HONESTY</div>
+          <div style="height:2.2vw;"></div>
+          <div class="linear-hero-ko-main">저희는 정직합니다</div>
+          <div class="linear-hero-ko-sub">결코 장기 계약을 강요하지 않습니다.<br>아무나 받지 않습니다. 정말 성과가 날 수 있는 분들만 받겠습니다.<br>업무 성과 속이지 않고 솔직하게 말씀드리겠습니다.</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- ability 이미지 (좌우 꽉차게) -->
-  <div class="section-hero-img-wrap">
-    <img src="ability.jpg" alt="ability" class="section-hero-img-full">
-  </div>
-  <div class="split-section">
-    <div class="panel black">
-      <div class="linear-hero-block">
-        <div class="linear-hero-en" style="font-size:5vw; font-weight:900; margin-bottom:0; white-space:nowrap;">WE'RE GOOD AT</div>
-        <div class="linear-hero-en-sub" style="margin-top:0; font-size:5vw; font-weight:900;">WHAT WE DO</div>
-        <div style="height:2.2vw;"></div>
-        <div class="linear-hero-ko-main">저희는 실력이 있습니다</div>
-        <div class="linear-hero-ko-sub">지난 10년 간 여러 사업을 시도했습니다.<br>솔직히 언제나 성공한 것은 아니였습니다.<br>그렇지만 현재는 수십억 매출 매장 운영하고 있습니다.<br>대면으로 찾아오셔도 좋습니다. 자신있습니다.</div>
+    <!-- ability 이미지 (좌우 꽉차게) -->
+    <div class="section-hero-img-wrap">
+      <img src="ability.jpg" alt="ability" class="section-hero-img-full">
+    </div>
+    <div class="split-section">
+      <div class="panel black">
+        <div class="linear-hero-block">
+          <div class="linear-hero-en" style="font-size:5vw; font-weight:900; margin-bottom:0; white-space:nowrap;">WE'RE GOOD AT</div>
+          <div class="linear-hero-en-sub" style="margin-top:0; font-size:5vw; font-weight:900;">WHAT WE DO</div>
+          <div style="height:2.2vw;"></div>
+          <div class="linear-hero-ko-main">저희는 실력이 있습니다</div>
+          <div class="linear-hero-ko-sub">지난 10년 간 여러 사업을 시도했습니다.<br>솔직히 언제나 성공한 것은 아니였습니다.<br>그렇지만 현재는 수십억 매출 매장 운영하고 있습니다.<br>대면으로 찾아오셔도 좋습니다. 자신있습니다.</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- victory 이미지 (좌우 꽉차게) -->
-  <div class="section-hero-img-wrap">
-    <img src="victory.jpg" alt="victory" class="section-hero-img-full">
-  </div>
-  <div class="split-section">
-    <div class="panel black">
-      <div class="linear-hero-block">
-        <div class="linear-hero-en" style="font-size:5vw; font-weight:900; white-space:nowrap;">WE CAN'T LOSE</div>
-        <div style="height:2.2vw;"></div>
-        <div class="linear-hero-ko-main linear-hero-ko-sub">이길 수 밖에 없는 마케팅을 알려드리겠습니다.</div>
+    <!-- victory 이미지 (좌우 꽉차게) -->
+    <div class="section-hero-img-wrap">
+      <img src="victory.jpg" alt="victory" class="section-hero-img-full">
+    </div>
+    <div class="split-section">
+      <div class="panel black">
+        <div class="linear-hero-block">
+          <div class="linear-hero-en" style="font-size:5vw; font-weight:900; white-space:nowrap;">WE CAN'T LOSE</div>
+          <div style="height:2.2vw;"></div>
+          <div class="linear-hero-ko-main linear-hero-ko-sub">이길 수 밖에 없는 마케팅을 알려드리겠습니다.</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <section style="background:#000; width:100vw; min-height:10vh;"></section>
+    <section style="background:#000; width:100vw; min-height:10vh;"></section>
 
-  <!-- 5. 서비스: GSAP scrollTrigger 스타일, pin+scrub, 한 번에 하나씩 등장/사라짐 -->
-  <section class="section service-scroll-gsap" id="service-scroll" style="background:#000;">
-    <div class="service-gsap-list">
-      <div class="service-gsap-item naver">Naver</div>
-      <div class="service-gsap-item meta">Meta</div>
-      <div class="service-gsap-item google">
-        <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+    <!-- 5. 서비스: GSAP scrollTrigger 스타일, pin+scrub, 한 번에 하나씩 등장/사라짐 -->
+    <section class="section service-scroll-gsap" id="service-scroll" style="background:#000;">
+      <div class="service-gsap-list">
+        <div class="service-gsap-item naver">Naver</div>
+        <div class="service-gsap-item meta">Meta</div>
+        <div class="service-gsap-item google">
+          <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+        </div>
+        <div class="service-gsap-item daangn">Daangn</div>
+        <div class="service-gsap-item kakao">Kakao</div>
       </div>
-      <div class="service-gsap-item daangn">Daangn</div>
-      <div class="service-gsap-item kakao">Kakao</div>
-    </div>
-  </section>
+    </section>
 
-  <section class="proof-section" style="background:#000;">
-    <div class="proof-title">저희는 숫자로 증명하겠습니다.</div>
-  </section>
-  
-  <section class="proof-section" style="background:#000;">
-    <div class="proof-image-container">
-      <img src="성공 사례1.png" alt="성공 사례1" class="proof-img-single">
-    </div>
-  </section>
-  
-  <section class="proof-section" style="background:#000;">
-    <div class="proof-image-container">
-      <img src="성공 사례3.png" alt="성공 사례3" class="proof-img-single">
-    </div>
-  </section>
+    <section class="proof-section" style="background:#000;">
+      <div class="proof-title">저희는 숫자로 증명하겠습니다.</div>
+    </section>
+    
+    <section class="proof-section" style="background:#000;">
+      <div class="proof-image-container">
+        <img src="성공 사례1.png" alt="성공 사례1" class="proof-img-single">
+      </div>
+    </section>
+    
+    <section class="proof-section" style="background:#000;">
+      <div class="proof-image-container">
+        <img src="성공 사례3.png" alt="성공 사례3" class="proof-img-single">
+      </div>
+    </section>
 
-  <!-- 7. 문의하기 폼 -->
-  <section class="section contact">
-    <div class="contact-form-wrap">
-      <div class="contact-desc">아래 정보를 남겨주시면 빠르게 연락드리겠습니다.</div>
-      <form>
-        <input type="text" placeholder="회사/기업" required />
-        <input type="text" placeholder="성함" required />
-        <input type="tel" placeholder="전화번호" required />
-        <input type="email" placeholder="이메일" required />
-        <input type="text" placeholder="진행 중인 마케팅" />
-        <textarea placeholder="무엇을 도와드릴까요?" required></textarea>
-        <button type="submit">문의하기</button>
-      </form>
-    </div>
-  </section>
-
+    <!-- 7. 문의하기 폼 -->
+    <section class="section contact">
+      <div class="contact-form-wrap">
+        <div class="contact-desc">아래 정보를 남겨주시면 빠르게 연락드리겠습니다.</div>
+        <form>
+          <input type="text" placeholder="회사/기업" required />
+          <input type="text" placeholder="성함" required />
+          <input type="tel" placeholder="전화번호" required />
+          <input type="email" placeholder="이메일" required />
+          <input type="text" placeholder="진행 중인 마케팅" />
+          <textarea placeholder="무엇을 도와드릴까요?" required></textarea>
+          <button type="submit">문의하기</button>
+        </form>
+      </div>
+    </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-wrap">

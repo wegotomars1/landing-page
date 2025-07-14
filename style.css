@@ -10,6 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-divider {
   display: inline-block;
   margin: 0 4px;
@@ -35,7 +41,11 @@ body {
 }
 
 .section.contact {
-  padding: 0 2vw;
+  background: #000 !important;
+  padding: 48px 2vw;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
 }
 
 .true-focus {
