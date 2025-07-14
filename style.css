@@ -7,7 +7,7 @@ body {
   margin: 0;
   background: #111;
   color: #fff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; 제거 */
 }
 
 .section.hero, .section.decrypted { background-color: #000 !important; }
@@ -119,7 +119,7 @@ body {
 }
 
 .worry-text-canvas {
-  max-width: 90vw;
+  max-width: 100%;
   height: auto;
 }
 
@@ -691,7 +691,7 @@ body {
     radial-gradient(ellipse at center, rgba(0,0,0,0.35) 40%, rgba(0,0,0,1) 100%);
 }
 @media (max-width: 600px) {
-  .section-hero-img-full { max-width: 100vw; }
+  .section-hero-img-full { max-width: 100%; }
 } 
 
 /* 맨 아래 section의 배경색 침범 방지: min-height: 100vh 제거 및 필요시 padding-bottom 조정 */
