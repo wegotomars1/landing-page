@@ -693,26 +693,3 @@ body {
 @media (max-width: 600px) {
   .section-hero-img-full { max-width: 100vw; }
 } 
-
-@media (max-width: 600px) {
-  .footer-wrap {
-    padding: 0 2vw;
-  }
-  .footer-info {
-    align-items: center !important;
-    text-align: center !important;
-    width: 100%;
-    gap: 10px !important;
-  }
-  .footer-row {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    gap: 4px !important;
-    width: 100%;
-  }
-  .footer-logo {
-    margin-bottom: 12px;
-  }
-} 
