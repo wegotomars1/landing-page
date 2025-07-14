@@ -34,6 +34,10 @@ body {
   box-sizing: border-box;
 }
 
+.section.contact {
+  padding: 0 2vw;
+}
+
 .true-focus {
   font-size: 4rem;
   font-weight: 900;
