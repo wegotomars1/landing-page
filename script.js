@@ -278,10 +278,33 @@ window.addEventListener('DOMContentLoaded', function() {
   // 기존 폼 JS 유지
   const form = document.querySelector('.contact form');
   if(form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
       e.preventDefault();
-      alert('문의가 정상적으로 접수되었습니다!');
-      form.reset();
+      const inputs = form.querySelectorAll('input, textarea');
+      const data = {};
+      inputs.forEach(input => {
+        if(input.type === 'text' && input.placeholder === '회사/기업') data.company = input.value;
+        else if(input.type === 'text' && input.placeholder === '성함') data.name = input.value;
+        else if(input.type === 'tel') data.phone = input.value;
+        else if(input.type === 'email') data.email = input.value;
+        else if(input.type === 'text' && input.placeholder === '진행 중인 마케팅') data.marketing = input.value;
+        else if(input.tagName.toLowerCase() === 'textarea') data.message = input.value;
+      });
+      try {
+        const res = await fetch('https://hook.us2.make.com/8x8a2o5dirnouvac2qkortm2eli904de', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if(res.ok) {
+          alert('문의가 정상적으로 접수되었습니다!');
+          form.reset();
+        } else {
+          alert('문의 전송에 실패했습니다. 다시 시도해 주세요.');
+        }
+      } catch(err) {
+        alert('문의 전송 중 오류가 발생했습니다.');
+      }
     });
   }
 });
