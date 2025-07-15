@@ -147,7 +147,13 @@
           <input type="email" placeholder="이메일" required />
           <input type="text" placeholder="진행 중인 마케팅" />
           <textarea placeholder="무엇을 도와드릴까요?" required></textarea>
-          <button type="submit">문의하기</button>
+          <div class="privacy-agree">
+            <span class="privacy-link">
+              <a href="privacy.html" target="_blank" class="privacy-link-text">개인정보 수집 및 동의</a>
+              <input type="checkbox" id="privacyCheck" style="margin-left:0.7em; vertical-align:middle;" />
+            </span>
+          </div>
+          <button type="submit" id="submitBtn" disabled>문의하기</button>
         </form>
       </div>
     </section>

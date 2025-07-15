@@ -309,6 +309,16 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const privacyCheck = document.getElementById('privacyCheck');
+  const submitBtn = document.getElementById('submitBtn');
+  if (privacyCheck && submitBtn) {
+    privacyCheck.addEventListener('change', function() {
+      submitBtn.disabled = !privacyCheck.checked;
+    });
+  }
+});
+
 // Fuzzy Text 초기화 함수
 function initFuzzyTexts() {
   const worryTexts = [
